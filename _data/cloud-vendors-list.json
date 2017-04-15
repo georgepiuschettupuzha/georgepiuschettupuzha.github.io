@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Amazon Web Services",
+        "oem": "**Amazon** (AMZN)"
+    },
+    {
+        "title": "Microsoft Azure",
+        "oem": "**Microsoft** (MSFT)" 
+
+    },
+    {
+        "title": "Google Cloud Platform",
+        "oem": "**Google** (GOOG)"
+    }
+]

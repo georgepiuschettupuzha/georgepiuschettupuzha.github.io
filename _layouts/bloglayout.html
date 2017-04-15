@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<span class="post-header">Blogs</span>
+
+{% include blogcategorynav.html %}
+
+<p class="post-header" {%if page.category %} style="color: #000;" {% endif %}>My Blogs {%if page.category %} - {{page.category}} {% endif %}</p>
+
+{{content}}
+
+{% if page.author %} Author: {{page.author}} {% endif %} {% if page.author and page.source %} | {% endif %} {% if page.source %} Source: <a href="{{page.source}}">{{page.source}}</a> {% endif %}
