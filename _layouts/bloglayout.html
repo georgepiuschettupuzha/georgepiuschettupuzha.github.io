@@ -10,4 +10,4 @@ layout: default
 
 {{content}}
 
-{% if page.author %} Author: {{page.author}} {% endif %} {% if page.author and page.source %} | {% endif %} {% if page.source %} Source: <a href="{{page.source}}">{{page.source}}</a> {% endif %}
+{% if page.author %} Author: {{page.author}} {% endif %} {% if page.author and page.source %} | {% endif %} {% if page.source %} Source: {% if page.source contains 'http' or page.source contains 'https' or page.source contains 'www' %}<a href="{{page.source}}">{{page.source}}</a>{% else %}{{page.source}}{% endif %} {% endif %}
