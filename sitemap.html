@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<span class="post-header">Sitemap</span>
+
+<hr/>
+
+{% for post in site.posts %}
+
+    {% if post.layout %}
+        
+        {% include sitemapPage.html entry=post %}
+        
+    {% endif %}
+
+{% endfor %}
+
+{% for page in site.pages %}
+
+    {% if page.layout %}
+    
+        {% include sitemapPage.html entry=page %}
+
+    {% endif %}
+    
+{% endfor %}

@@ -8,7 +8,7 @@
 
         {% if post.layout %}
             
-            {% include sitemap-entry.xml entry=post %}
+            {% include sitemapXmlEntry.xml entry=post %}
             
         {% endif %}
 
@@ -18,7 +18,7 @@
 
         {% if page.layout %}
         
-            {% include sitemap-entry.xml entry=page %}
+            {% include sitemapXmlEntry.xml entry=page %}
 
         {% endif %}
         

@@ -1,0 +1,10 @@
+#Notice: Crawling this site is good but use it for good
+#Peace
+
+User-Agent: *
+
+Disallow: /search-anywhere-coz-its-not-there.html
+Disallow: /css/
+Disallow: /*.css
+
+Allow: /
