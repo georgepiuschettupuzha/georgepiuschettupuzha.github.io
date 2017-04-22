@@ -1,6 +1,9 @@
-<nav>
-    <ul class="nav">        
-        <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{site.baseurl}}/">Gdcrocx's</a></li>
-        <li class="{% if page.url == '/blogs/' or page.url == '/cloudhaven/' or page.url == '/chattychat/' %}active{% endif %}"><a href="{{site.baseurl}}/blogs/">Blog</a> </li>
-    </ul>
-</nav>
+<header>
+    <nav>
+        <ul class="nav">        
+            <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{site.baseUrl}}/">Gdcrocx's</a></li>
+            <li class="{% if page.url == '/blogs/' or page.url == '/cloudhaven/' or page.url == '/chattychat/' %}active{% endif %}"><a href="{{site.baseUrl}}/blogs/">Blog</a> </li>
+            <li class="{% if page.url == '/me/' %}active{% endif %}"><a href="{{site.baseUrl}}/me/">Bio</a></li>
+        </ul>
+    </nav>
+</header>
