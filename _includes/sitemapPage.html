@@ -1,0 +1,9 @@
+{% if {{include.entry.title}} %}
+
+    <p>
+        <a href="{{site.domainUrl}}{{site.baseUrl}}{{ include.entry.url}}">{{include.entry.title}}</a>
+    </p>
+
+    {% if {{include.entry.meta}} %}<span>{{include.entry.meta}}</span>{% endif %} 
+
+{% endif %}
