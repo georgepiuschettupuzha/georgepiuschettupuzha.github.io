@@ -4,7 +4,5 @@
 User-Agent: *
 
 Disallow: /search-anywhere-coz-its-not-there.html
-Disallow: /css/
-Disallow: /*.css
 
 Allow: /
