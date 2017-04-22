@@ -2,4 +2,4 @@ markdown: kramdown
 domainUrl: "https://gdcrocx.github.io"
 baseUrl: ""
 exclude: ['README.md']
-permalink: pretty"
+permalink: pretty
