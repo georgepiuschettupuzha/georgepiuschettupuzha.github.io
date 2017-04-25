@@ -5,6 +5,7 @@ meta: "See some popular cloud vendors here."
 author: "George Davis"
 source: "Personal writing"
 category: "cloudhaven"
+date: "April 14, 2017"
 ---
 
 <ol>

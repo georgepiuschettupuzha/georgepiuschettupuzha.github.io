@@ -5,6 +5,7 @@ meta: "Some personal quotes about many things in general."
 author: "George Davis"
 source: "Personal writing"
 category: "chattychat"
+date: "April 16, 2017"
 ---
 
 <section>
