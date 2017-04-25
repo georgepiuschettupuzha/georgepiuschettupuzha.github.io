@@ -11,3 +11,19 @@ layout: default
 {{content}}
 
 {% if page.author %} Author: {{page.author}} {% endif %} {% if page.author and page.source %} | {% endif %} {% if page.source %} Source: {% if page.source contains 'http' or page.source contains 'https' or page.source contains 'www' %}<a href="{{page.source}}">{{page.source}}</a>{% else %}{{page.source}}{% endif %} {% endif %}
+
+{% if page.date %}| 
+
+{{ page.date | date: "%B"}}
+
+{% assign day = page.date | date: "%-d" %}
+{% case day %}
+    {% when '1' or '21' or '31' %}{{ day }}st
+    {% when '2' or '22' %}{{ day }}nd
+    {% when '3' or '23' %}{{ day }}rd
+    {% else %}{{ day }}th
+{% endcase %}
+
+{{ page.date | date: ", %Y"}}
+
+{% endif %}
