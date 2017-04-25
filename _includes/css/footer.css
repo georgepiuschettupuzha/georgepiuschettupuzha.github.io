@@ -1,0 +1,13 @@
+footer {
+    margin-top: 2rem;
+    color: #333;
+}
+
+footer span, footer p {
+    font-size: 0.75rem;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 0.2rem 0.3rem;    
+}

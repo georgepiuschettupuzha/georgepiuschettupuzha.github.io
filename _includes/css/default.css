@@ -8,15 +8,6 @@ html {
     line-height: 1.3rem;
 }
 
-footer {
-    margin-top: 2rem;
-    color: #333;
-}
-
-footer span {
-    font-size: 0.75rem;
-}
-
 a {
     text-decoration: none;
     color: #13F;
