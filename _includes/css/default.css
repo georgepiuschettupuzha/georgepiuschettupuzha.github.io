@@ -12,3 +12,36 @@ a {
     text-decoration: none;
     color: #13F;
 }
+
+.page-header {
+    width: 100%;
+}
+
+.page-content {
+    padding: 1rem;
+}
+
+.post-header {
+    width: 100%;
+}
+
+.nav-col p a {
+    color: #FFF;
+}
+
+.post-content {
+    padding: 1rem;
+}
+
+.nav-col {
+    /*float: right;*/
+    max-width: 33%; 
+    padding: 3rem 0;   
+}
+    
+.nav-col p {
+    font-size: 1rem;
+    color: #FFF;      
+    display: block;
+    margin-left: 15px;
+}
