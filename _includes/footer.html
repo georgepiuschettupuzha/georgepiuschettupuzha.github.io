@@ -4,7 +4,7 @@
         
         <!--{% include copyContent.html copyClass='copyContent-bottom' %}    -->
 
-        {% include blogNav.html %}
+        {% if page.url contains "/blogs/" %}{% include blogNav.html %}{% endif %}
 
         <div class="social-links">
                 {% for link in site.data.settings %}
