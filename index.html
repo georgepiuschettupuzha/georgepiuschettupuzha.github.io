@@ -7,3 +7,16 @@ changefreq: weekly
 ---
 
 <span class="page-header">Home</span>
+
+<article class="page-content">
+
+    Thanks for dropping by. Do have a look at my occasional blog and self-featured Bio :)
+
+</article>
+
+<div class="nav-col">
+    <span class="post-header">Recently Published</span>
+    {% for post in site.posts limit: 5%}
+        <p><a href="{{site.domainUrl}}{{site.baseUrl}}{{post.url}}">{{post.title}}</a></p>
+    {% endfor %}
+</div>
