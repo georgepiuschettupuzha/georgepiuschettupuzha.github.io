@@ -1,0 +1,13 @@
+img {    
+    padding: 1rem;
+    background: cover;
+    max-width: 33%;        
+}
+    
+.circle {
+    border-radius: 50%;        
+}
+
+.center {
+    text-align: center;       
+}
