@@ -1,0 +1,73 @@
+.testimony-carousel {
+    margin: auto 0; 
+    width: 100%;  
+    position: relative;
+}
+
+.testimonials {
+    display: flex;    
+    overflow-x: hidden;        
+    text-align: center;    
+    max-width: 70%;
+    /*position: absolute;*/
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.testimony {
+    display: none;    
+}
+
+.active-testimony {
+    display: block;
+}
+
+/*Controls*/
+.testimonial-controls {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-controls div {
+    position: relative;
+    size: 20px 40px;
+    margin-top: -60%;
+    cursor: pointer;    
+}
+
+.testimonial-controls div path {
+    fill: #FFF;
+}
+
+.testimonial-control-next {
+    position: absolute;
+    display: inline;         
+    top: -270px;
+    left: 90%;
+    right: 0;
+    bottom: 0;   
+}
+
+.testimonial-control-prev {
+    position: absolute;
+    display: inline;          
+    top: -270px;
+    left: 0;
+    right: 10%;
+    bottom: 0;     
+}
+
+.testimonial-control-next #Layer_1 {
+    margin: 0;
+    top: -8px;
+    left: -17px;
+    max-width: 30px;
+    max-height: 40px; 
+
+}
+
+.testimonial-control-prev #Layer_1 {
+    margin: 0;
+    max-width: 30px;
+    max-height: 40px;
+}
