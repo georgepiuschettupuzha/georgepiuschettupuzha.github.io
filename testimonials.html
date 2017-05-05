@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Testimonials"
+meta: Testimonials on George Davis at his work.
+priority: 1.0
+changefreq: monthly
+category: pages
+---
+
+<div class="testimony-carousel">
+
+    <div class="testimonials">
+
+        {% for award in site.data.portfolio-testimonials %}
+
+        <div class="testimony">
+            {% if award.recognition %}<p>{{ award.recognition | markdownify }}</p>{% endif %}
+            {% if award.citation %}<p>{{ award.citation }}</p>{% endif %}
+            {% if award.jury %}<p>{{ award.jury }}</p>{% endif %}
+            {% if award.designation %}<p>{{ award.designation }}</p>{% endif %}
+            {% if award.workplace %}<p>{{ award.workplace }}</p>{% endif %}
+            {% if award.date %}<p>{{ award.date }}</p>{% endif %}
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+<div class="testimonial-controls">
+    
+    <div class="testimonial-control-prev">{% include icons/icon-prev.html %}</div>
+    <div class="testimonial-control-next">{% include icons/icon-next.html %}</div>
+    
+</div>
