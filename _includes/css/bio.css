@@ -1,7 +1,8 @@
 img {    
     padding: 1rem;
     background: cover;
-    max-width: 33%;        
+    max-width: 33%;   
+    min-width: 25%;     
 }
     
 .circle {

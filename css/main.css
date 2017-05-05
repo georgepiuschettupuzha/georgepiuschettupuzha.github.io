@@ -7,5 +7,6 @@
 {% include css/posts.css %}
 {% include css/pages.css %}
 {% include css/bio.css %}
+{% include css/testimonials.css %}
 {% include css/icons.css %}
 {% include css/footer.css %}
