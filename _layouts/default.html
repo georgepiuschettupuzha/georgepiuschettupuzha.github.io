@@ -19,6 +19,34 @@
 
     {% include footer.html %}
 
+    {% if page.url == '/' %}
+    <!-- Home Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "George Davis C",
+        "url": "{{site.domainUrl}}",
+        "keywords": "{{page.keywords}}",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{site.domainUrl}}"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "George Davis C",
+            "sameAs": [
+                "https://twitter.com/GDCrocx",
+                "https://github.com/gdcrocx",
+                "https://plus.google.com/+GeorgeDavisGdcrocx",
+                "https://www.facebook.com/GDCrocx",
+                "https://www.linkedin.com/in/george-davis-c-0a042563"
+            ]
+        }
+    }
+    </script>
+    {% endif %}
+
 </body>
 
 </html>
