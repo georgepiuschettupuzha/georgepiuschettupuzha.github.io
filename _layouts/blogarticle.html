@@ -19,7 +19,8 @@ layout: bloglayout
     "keywords": "{{page.keywords}}", 
     "url": "{{site.domainUrl}}",
     "inLanguage": "en",
-    "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
+    "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
     {% if page.author contains "George Davis" %}
         {% include schema/author.html %}
     {% else %}
