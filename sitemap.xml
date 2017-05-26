@@ -20,7 +20,7 @@
         
             {% unless page.title contains "Sitemap"  %}
             
-                {% include sitemapPage.html entry=page %}
+                {% include sitemapXmlEntry.xml entry=page %}
                 
             {% endunless %}
 
