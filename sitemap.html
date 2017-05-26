@@ -21,7 +21,11 @@ title: Sitemap
 
     {% if page.layout %}
     
-        {% include sitemapPage.html entry=page %}
+        {% unless page.title contains "Sitemap"  %}
+        
+            {% include sitemapPage.html entry=page %}
+            
+        {% endunless %}
 
     {% endif %}
     
