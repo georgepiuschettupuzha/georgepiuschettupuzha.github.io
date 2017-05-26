@@ -18,7 +18,11 @@
 
         {% if page.layout %}
         
-            {% include sitemapXmlEntry.xml entry=page %}
+            {% unless page.title contains "Sitemap"  %}
+            
+                {% include sitemapPage.html entry=page %}
+                
+            {% endunless %}
 
         {% endif %}
         
