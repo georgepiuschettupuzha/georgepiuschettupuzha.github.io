@@ -35,11 +35,11 @@
         "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
         "url": "{{site.domainUrl}}",
         "keywords": "{{page.keywords}}",
+        {% include schema/author.html %}
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "{{site.domainUrl}}"
-        },
-        {% include schema/author.html %}
+        }
     }
     </script>
     {% endif %}
