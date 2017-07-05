@@ -5,7 +5,7 @@ meta: "To-do: Upcoming article on why you need AWS Regions and Endpoints and how
 author: "George Davis"  
 source: "Personal writing"
 category: "cloudhaven"
-date: "June 30, 2017"
+date: "December 31, 2017"
 ---
 
 To be published once edited and reviewed

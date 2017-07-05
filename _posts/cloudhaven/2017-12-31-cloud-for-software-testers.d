@@ -5,7 +5,7 @@ meta: "This is an article intended for Software testers who are looking at the C
 author: "George Davis"
 source: "Personal writing"
 category: "cloudhaven"
-date: "June 30, 2017"
+date: "December 31, 2017"
 ---
 
 No content written.

@@ -1,11 +1,11 @@
 ---
 layout: blogarticle
-title: "Be the best at managing your Cloud inventory"
-meta: "To-do: Upcoming article on managing your Cloud inventory"
+title: "AWS Managed services Vs Amazon EC2"
+meta: "To-do: Upcoming article on AWS Managed services Vs Amazon EC2"
 author: "George Davis"
 source: "Personal writing"
 category: "cloudhaven"
-date: "June 30, 2017"
+date: "December 31, 2017"
 ---
 
 To be published once edited and reviewed

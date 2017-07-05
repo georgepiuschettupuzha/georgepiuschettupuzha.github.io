@@ -1,11 +1,11 @@
 ---
 layout: blogarticle
-title: "AWS Design Patterns"
-meta: "To-do: Upcoming article on AWS Solutions and Design Patterns"
+title: "Disaster Recovery"
+meta: "To-do: Upcoming article on Disaster Recovery."
 author: "George Davis"
 source: "Personal writing"
 category: "cloudhaven"
-date: "June 30, 2017"
+date: "December 31, 2017"
 ---
 
 To be published once edited and reviewed
