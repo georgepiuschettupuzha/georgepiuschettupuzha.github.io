@@ -18,6 +18,11 @@ keywords: George Davis, Self Bio, professional blog, personal content, contact i
 <div class="nav-col">
     <span class="post-header">Recently Published</span>
     {% for post in site.posts limit: 5%}
-        <p><a href="{{site.domainUrl}}{{site.baseUrl}}{{post.url}}">{{post.title}}</a></p>
+        {% assign postTimestamp = post.date | date: '%s' %}
+        {% assign nowTimestamp = 'now' | date: '%s' %}
+        {% if postTimestamp <= nowTimestamp %}
+            <p><a href="{{site.domainUrl}}{{site.baseUrl}}{{post.url}}">{{post.title}}</a></p>
+        {% endif %}
     {% endfor %}
 </div>
+
