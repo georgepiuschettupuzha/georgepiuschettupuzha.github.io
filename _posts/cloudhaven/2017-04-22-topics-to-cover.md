@@ -1,7 +1,7 @@
 ---
 layout: blogarticle
 title: "Upcoming articles on Cloud."
-meta: "To-do: Upcoming articles on Cloud."
+meta: "To-do: Upcoming articles on Cloud. This is a quick list of upcoming articles that are being planned for this year and the list is only expected to increase as we move forward"
 author: "George Davis"
 source: "Personal writing"
 category: "cloudhaven"
