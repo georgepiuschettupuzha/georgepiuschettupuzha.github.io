@@ -6,8 +6,8 @@
 
 @media screen and (max-width: 500px) and (min-width: 100px) {
     html {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 1rem;
+        line-height: 1rem;
     }
 
     header nav ul li {
