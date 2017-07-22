@@ -16,7 +16,7 @@ keywords: George Pius, Self Bio, professional blog, personal content, contact in
 </article>
 
 <div class="nav-col">
-    <span class="post-header">Recently Published</span>
+    <!-- <span class="post-header">Recently Published</span> -->
     {% for post in site.posts limit: 5%}
         {% assign postTimestamp = post.date | date: '%s' %}
         {% assign nowTimestamp = 'now' | date: '%s' %}

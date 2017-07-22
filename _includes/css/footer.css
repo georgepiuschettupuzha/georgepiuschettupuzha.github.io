@@ -14,8 +14,8 @@ footer span, footer p {
 
 .clickLinks a {
     font-size: 2rem;
-    padding: 2rem;
-    margin: 1rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
     border: 2px solid #FFF;
     border-radius: 25%;
 }

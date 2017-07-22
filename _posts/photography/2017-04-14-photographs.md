@@ -1,10 +1,10 @@
 ---
 layout: blogarticle
-title: "Cloud - Expect Us!"
-meta: "See some cloud based writeups and free utilities and scribble code in here."
-author: "George Davis"
+title: "Photographs"
+meta: "See some of my photographs here."
+author: "George Pius Chettupuzha"
 source: "Personal writing"
-category: "cloudhaven"
+category: "photography"
 date: "April 14, 2017"
 ---
 

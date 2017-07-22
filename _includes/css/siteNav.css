@@ -1,24 +1,38 @@
-.active {
-    color: #FFF;
-    background: #414;    
+.active {    
+    background: #FFF;  
+    border: 0;
+    border-bottom: 3px solid grey;
+}
+
+.active a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
 }
 
 ul li a {
     text-decoration: none;
-    color: #FFF;
+    color: #AAA;
+    font-weight: 500;
 }
 
-nav ul li {
+nav ul li {    
     list-style: none;
     display: inline-block;
-    margin-right: 0.5rem;
-    border-radius: 0.15rem;
+    margin-right: 0.5rem;    
     padding: 0.5rem 1.75rem;
-    border: 0.01rem solid #323;
-    background: #989;        
+    background: #FFF;
+    border: 0;
+    /* border-radius: 0.15rem; */
+    /* border: 0.01rem solid #323; */       
 }
 
 nav ul {
     margin-right: 0.5rem;
     padding: 0.25rem;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
 }

@@ -1,10 +1,10 @@
 ---
 layout: blogarticle
-title: "First Blog Post"
+title: "Environmental Designs"
 meta: "This is my first blog post with Jekyll and Github. <3 Opensource."
-author: "George Davis"
+author: "George Pius Chettupuzha"
 source: "Personal writing"
-category: "chattychat"
+category: "artwork"
 date: "April 15, 2017"
 ---
 

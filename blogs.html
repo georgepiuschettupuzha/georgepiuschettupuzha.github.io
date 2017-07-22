@@ -7,9 +7,6 @@ changefreq: weekly
 keywords: Blog, views, thoughts, opinions, beliefs, practice, Technology, Personal, Computer languages, knowledge, experience, nature
 ---
 
-{% include chattychatinclude.html %}
-{% include cloudhaveninclude.html %}
-
 <!-- Each post and blog -->
 <script type="application/ld+json">
 { 
@@ -22,7 +19,7 @@ keywords: Blog, views, thoughts, opinions, beliefs, practice, Technology, Person
     "url": "{{site.domainUrl}}",
     "inLanguage": "en",
     "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
-    {% if page.author contains "George Davis" %}
+    {% if page.author contains "George Pius Chettupuzha" %}
         {% include schema/author.html %}
     {% else %}
     "author": {
@@ -35,7 +32,7 @@ keywords: Blog, views, thoughts, opinions, beliefs, practice, Technology, Person
     {% endif %}
    "publisher":{  
       "@type":"Organization",
-      "name":"George Davis C",
+      "name":"George Pius Chettupuzha",
       "sameAs":[  
         "https://twitter.com/GDCrocx",
         "https://github.com/gdcrocx",

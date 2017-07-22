@@ -1,5 +1,5 @@
 markdown: kramdown
-domainUrl: "http://www.georgedavis.co"
+domainUrl: "http://gphotography.github.io"
 baseUrl: ""
 exclude: ['README.md']
 permalink: pretty
