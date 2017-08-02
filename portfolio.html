@@ -1,37 +1,17 @@
 ---
-layout: default
+layout: page
 title: "Work Portfolio"
 meta: Work portfolio on George Pius Chettupuzha at his work. These testimonies only represent the awards that George has got at Office and do not invlude the frequent appreciations and confidence that he earned. After you have been here, we trust you are confident that he is the guy you would go-to if you have a problem.
 priority: 1.0
 changefreq: monthly
 category: pages
 keywords: recognitions, awards, achievements, professional life, workplace perfection, agile, developer, test, DevOps, Cloud, ACE, Tech Mahindra, 1000 Leaders, Engineer
+author: gphotography
+type: gallery
+<!-- featimg: /galleries/gallery-standard-post/2.jpg -->
+gallery-id: gallery
+tags: [gallery, image]
+category: [image]
 ---
 
-<div class="testimony-carousel">
-
-    <div class="testimonials">
-
-        {% for award in site.data.portfolio-testimonials %}
-
-        <div class="testimony">
-            {% if award.recognition %}<p>{{ award.recognition | markdownify }}</p>{% endif %}
-            {% if award.citation %}<p>{{ award.citation }}</p>{% endif %}
-            {% if award.jury %}<p>{{ award.jury }}</p>{% endif %}
-            {% if award.designation %}<p>{{ award.designation }}</p>{% endif %}
-            {% if award.workplace %}<p>{{ award.workplace }}</p>{% endif %}
-            {% if award.date %}<p>{{ award.date }}</p>{% endif %}
-        </div>
-
-        {% endfor %}
-
-    </div>
-
-</div>
-
-<div class="testimonial-controls">
-    
-    <div class="testimonial-control-prev">{% include icons/icon-prev.html %}</div>
-    <div class="testimonial-control-next">{% include icons/icon-next.html %}</div>
-    
-</div>
+{% include gallery_lightbox.html %}

@@ -1,23 +1,12 @@
 ---
-layout: pagelayout
-title: "Page Not Found"
-meta: Some of the pages might not be available, infrequently as new content is being prepared. This is a 404 page for a reason, so stay tuned and come here often. All the good stuff, Assured! :)
-priority: 0.3
-changefreq: yearly
-keywords: George Davis C, George Joseph, Error, 404, Page not found
-permalink: /404.html
+layout: index
+title: Ooops!
 ---
+<div class="error">
+    <p>Something seems to have gone wrong here. Sorry 'bout that</p>
+    <p>Maybe we can make up for it with some posts and then be friends again?</p>
+</div>
 
-<span class="post-header">Page Not Found</span>
-
-<hr/>
-
-<article>
-
-    <div class="error-404">{% include icons/error-404.html %}</div>
-
-    <p class="center">Cupertino, cappuccino and yes we do know!</p>
-
-    <p class="center">We'll be back soon. Thanks!</p>
-
-</article>
+{% for post in site.posts limit:4 %}
+    {% include article_index.html %}
+{% endfor %}

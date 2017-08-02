@@ -1,9 +1,0 @@
-{% if {{include.entry.title}} %}
-
-    <p>
-        <a href="{{site.domainUrl}}{{site.baseUrl}}{{ include.entry.url}}">{% if {{include.entry.title}} != 'Home' %}{{include.entry.title}}{% else %}Index{% endif %}</a>
-    </p>
-
-    {% if {{include.entry.meta}} %}<span>{{include.entry.meta}}</span>{% endif %} 
-
-{% endif %}
