@@ -19,3 +19,7 @@ footer span, footer p {
     border: 2px solid #FFF;
     border-radius: 25%;
 }
+
+.footer-text {
+    font-size: 11px;
+}

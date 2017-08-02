@@ -26,7 +26,7 @@ a {
 }
 
 .nav-col p a {
-    color: #FFF;
+    color: #000;
 }
 
 .post-content {
@@ -41,7 +41,7 @@ a {
     
 .nav-col p {
     font-size: 1rem;
-    color: #FFF;      
+    color: #000;      
     display: block;
     margin-left: 15px;
 }

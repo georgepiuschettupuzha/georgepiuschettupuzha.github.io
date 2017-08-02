@@ -1,12 +1,15 @@
 <header>
 
     <div class="center logo">{% include icons/logo.html %}</div>
+    
     <nav>
         <ul class="center nav">        
-            <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{site.baseUrl}}/">Home</a></li>
-            <li class="{% if page.url == '/me/' %}active{% endif %}"><a href="{{site.baseUrl}}/me/">Bio</a></li>
+            
+            <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{site.baseUrl}}/">Home</a></li>            
             <li class="{% if page.url == '/blogs/' %}active{% endif %}"><a href="{{site.baseUrl}}/blogs/">Blog</a> </li>            
             <li class="{% if page.url == '/portfolio/' %}active{% endif %}"><a href="{{site.baseUrl}}/portfolio/">Work Portfolio</a></li>
+            <li class="{% if page.url == '/me/' %}active{% endif %}"><a href="{{site.baseUrl}}/me/">Bio</a></li>
+            
         </ul>
     </nav>
 
