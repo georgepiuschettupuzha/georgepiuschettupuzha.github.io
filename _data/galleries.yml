@@ -1,0 +1,21 @@
+- id: gallery
+  imagefolder: /img/galleries/gallery-standard-post
+  images:
+  - filename: 1.jpg
+    alttext: Gloomy Plant
+  - filename: 2.jpg
+    alttext: Creepy Stick
+  - filename: 3.jpg
+    alttext: Green Pattern
+  - filename: 4.jpg
+    alttext: Sky Blue
+  - filename: 5.jpg
+    alttext: Bright Attitude 
+  - filename: 6.jpg
+    alttext: Natural Paint Brush Effect
+  - filename: 7.jpg
+    alttext: Novel Pitcher
+  - filename: 8.jpg
+    alttext: Gold Ray
+  - filename: 9.jpg
+    alttext: Up To Infinity 
