@@ -1,7 +1,7 @@
 ---
 author: gphotography
 title: Golden Rays
-featimg: 8.jpg
+featimg: 8.JPG
 tags: [text]
 category: [standard]
 ---
