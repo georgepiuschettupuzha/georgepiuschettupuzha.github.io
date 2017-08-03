@@ -104,10 +104,10 @@ module Jekyll
     #  +base+         is the String path to the <source>.
     #  +posts_dir+ is the String path between <source> and the category folder.
     #  +category+     is the category currently being processed.
-    def initialize(site, base, posts_dir, post)
-      template_path = File.join(base, '_layouts', 'post_index.html')
-      super(template_path, 'index.html', site, base, posts_dir, post)
-    end
+    # def initialize(site, base, posts_dir, post)
+    #   template_path = File.join(base, '_layouts', 'post_index.html')
+    #   super(template_path, 'index.html', site, base, posts_dir, post)
+    # end
 
   end
 
@@ -120,13 +120,13 @@ module Jekyll
     #  +base+         is the String path to the <source>.
     #  +posts_dir+ is the String path between <source> and the category folder.
     #  +category+     is the category currently being processed.
-    def initialize(site, base, posts_dir, post)
-      template_path = File.join(base, '_includes', 'custom', 'post_feed.xml')
-      super(template_path, 'atom.xml', site, base, posts_dir, post)
+    # def initialize(site, base, posts_dir, post)
+    #   template_path = File.join(base, '_includes', 'custom', 'post_feed.xml')
+    #   super(template_path, 'atom.xml', site, base, posts_dir, post)
 
-      # Set the correct feed URL.
-      self.data['feed_url'] = "#{posts_dir}/#{name}" if render?
-    end
+    #   # Set the correct feed URL.
+    #   self.data['feed_url'] = "#{posts_dir}/#{name}" if render?
+    # end
 
   end
 
@@ -137,62 +137,62 @@ module Jekyll
     # writes the output to a file.
     #
     #  +post+ is the post currently being processed.
-    def write_post_index(post)
-      target_dir = GeneratePosts.posts_dir(self.config['posts_dir'], post)
-      index      = PostIndex.new(self, self.source, target_dir, post)
-      if index.render?
-        index.render(self.layouts, site_payload)
-        index.write(self.dest)
-        # Record the fact that this pages has been added, otherwise Site::cleanup will remove it.
-        self.pages << index
-      end
+    # def write_post_index(post)
+    #   target_dir = GeneratePosts.posts_dir(self.config['posts_dir'], post)
+    #   index      = PostIndex.new(self, self.source, target_dir, post)
+    #   if index.render?
+    #     index.render(self.layouts, site_payload)
+    #     index.write(self.dest)
+    #     # Record the fact that this pages has been added, otherwise Site::cleanup will remove it.
+    #     self.pages << index
+    #   end
 
-      # Create an Atom-feed for each index.
-      feed = PostFeed.new(self, self.source, target_dir, post)
-      if feed.render?
-        feed.render(self.layouts, site_payload)
-        feed.write(self.dest)
-        # Record the fact that this pages has been added, otherwise Site::cleanup will remove it.
-        self.pages << feed
-      end
-    end
+    #   # Create an Atom-feed for each index.
+    #   feed = PostFeed.new(self, self.source, target_dir, post)
+    #   if feed.render?
+    #     feed.render(self.layouts, site_payload)
+    #     feed.write(self.dest)
+    #     # Record the fact that this pages has been added, otherwise Site::cleanup will remove it.
+    #     self.pages << feed
+    #   end
+    # end
 
     # Loops through the list of category pages and processes each one.
-    def write_post_indexes(galleries)
-      if self.layouts.key? 'post_index'
-        self.galleries.each do |post|
-          self.write_post_index(post)
-        end
+    # def write_post_indexes(galleries)
+    #   if self.layouts.key? 'post_index'
+    #     self.galleries.each do |post|
+    #       self.write_post_index(post)
+    #     end
 
-      # Throw an exception if the layout couldn't be found.
-      else
-        throw "No 'post_index' layout found."
-      end
-    end
+    #   # Throw an exception if the layout couldn't be found.
+    #   else
+    #     throw "No 'post_index' layout found."
+    #   end
+    # end
 
   end
 
 
   # Jekyll hook - the generate method is called by jekyll, and generates all of the category pages.
-  class GeneratePosts < Generator
-    safe true
-    priority :high
+  # class GeneratePosts < Generator
+  #   safe true
+  #   priority :high
 
-    POSTS_DIR = 'postsDir'
+  #   POSTS_DIR = 'postsDir'
 
-    def generate(site)
-      site.write_post_indexes(site.data.galleries)      
-    end
+  #   # def generate(site)
+  #   #   site.write_post_indexes(site.data.galleries)      
+  #   # end
 
-    # Processes the given dir and removes leading and trailing slashes. Falls
-    # back on the default if no dir is provided.
-    def self.posts_dir(base_dir, post)
-      base_dir = (base_dir || POSTS_DIR).gsub(/^\/*(.*)\/*$/, '\1')
-      post = post.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
-      File.join(base_dir, post)
-    end
+  #   # # Processes the given dir and removes leading and trailing slashes. Falls
+  #   # # back on the default if no dir is provided.
+  #   # def self.posts_dir(base_dir, post)
+  #   #   base_dir = (base_dir || POSTS_DIR).gsub(/^\/*(.*)\/*$/, '\1')
+  #   #   post = post.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
+  #   #   File.join(base_dir, post)
+  #   # end
 
-  end
+  # end
 
 
   # Adds some extra filters used during the post page creation process.
@@ -204,24 +204,24 @@ module Jekyll
     #  +posts+ is the list of posts to format.
     #
     # Returns string
-    def post_links(posts)
-      base_dir = @context.registers[:site].config['posts_dir']
-      posts = posts.sort!.map do |category|
-        posts_dir = GeneratePosts.posts_dir(base_dir, post)
-        # Make sure the posts directory begins with a slash.
-        posts_dir = "/#{posts_dir}" unless posts_dir =~ /^\//
-        "<a class='post' href='#{posts_dir}/'>#{post}</a>"
-      end
+    # def post_links(posts)
+    #   base_dir = @context.registers[:site].config['posts_dir']
+    #   posts = posts.sort!.map do |category|
+    #     posts_dir = GeneratePosts.posts_dir(base_dir, post)
+    #     # Make sure the posts directory begins with a slash.
+    #     posts_dir = "/#{posts_dir}" unless posts_dir =~ /^\//
+    #     "<a class='post' href='#{posts_dir}/'>#{post}</a>"
+    #   end
 
-      case posts.length
-      when 0
-        ""
-      when 1
-        posts[0].to_s
-      else
-        posts.join(', ')
-      end
-    end
+    #   case posts.length
+    #   when 0
+    #     ""
+    #   when 1
+    #     posts[0].to_s
+    #   else
+    #     posts.join(', ')
+    #   end
+    # end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
     #

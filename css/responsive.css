@@ -1,0 +1,73 @@
+@media screen and (max-width: 4000px) and (min-width: 600px) {
+    
+    .head .row .logo {
+        padding: 0;
+        top: 0;
+        left: 0;
+        position: relative;
+        transform: none;
+    }
+
+    .head .row {
+        padding: 0.5rem;
+    }
+
+    header nav ul li {
+        font-size: 1rem;
+    }    
+
+    .margin {
+        padding: 1rem;
+    }
+
+    .iconnav ul {
+        display: inline;
+    }   
+}
+
+@media screen and (max-width: 1500px) and (min-width: 256px) {
+    html {
+        padding: 1rem;        
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 100px) {
+    html {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .head .row .logo, .head .row .logo svg {
+        padding: 0.5rem;
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: none;
+    }
+
+    .head .row {
+        padding: 2rem;
+    }
+
+    .iconnav ul {
+        display: inline;
+    }   
+
+    .toggle_link {
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul li {        
+        font-size: 0.75rem;                
+    }    
+
+    .margin {
+        padding: 0;
+    }
+
+    .nav-col {
+        max-width: 100%;
+        padding: 0;
+    }
+}
