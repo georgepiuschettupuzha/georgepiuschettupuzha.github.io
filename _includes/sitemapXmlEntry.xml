@@ -1,5 +1,13 @@
-<url>
-    <loc>{{site.url}}{{site.baseurl}}{{include.entry.url}}</loc>
-    {% if include.entry.changefreq %}<changefreq>{{include.entry.changefreq}}</changefreq>{% endif %}
-    {% if include.entry.priority %}<priority>{{include.entry.priority}}</priority>{% endif %}
-</url>
+{% if {{include.entry.title}} %}
+
+    {% unless {{include.entry.title}} contains "Posted by" or {{include.entry.title}} contains "Category" or {{include.entry.title}} contains "Page" or {{include.entry.title}} contains "Tag" %}
+    
+        <url>
+            <loc>{{site.url}}{{site.baseurl}}{{include.entry.url}}</loc>
+            {% if include.entry.changefreq %}<changefreq>{{include.entry.changefreq}}</changefreq>{% endif %}
+            {% if include.entry.priority %}<priority>{{include.entry.priority}}</priority>{% endif %}
+        </url>
+
+    {% endunless %}
+
+{% endif %}
