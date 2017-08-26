@@ -1,6 +1,6 @@
 name: GPhotography
 description: George Pius Chettupuzha
-url: #place url
+url: gphotography.github.io
 gems: [jekyll-paginate]
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
