@@ -1,7 +1,7 @@
 ---
 author: gphotography
 title: Creepy Stick
-featimg: 2.jpg
+featimg: 2.JPG
 tags: [text]
 category: [standard]
 ---
