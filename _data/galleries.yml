@@ -1,21 +1,82 @@
-- id: gallery
-  imagefolder: /img/galleries/gallery-standard-post
-  images:
-  - filename: 1.jpg
-    alttext: Gloomy Plant
-  - filename: 2.JPG
-    alttext: Creepy Stick
-  - filename: 3.JPG
-    alttext: Green Pattern
-  - filename: 4.JPG
-    alttext: Sky Blue
-  - filename: 5.JPG
-    alttext: Bright Attitude 
-  - filename: 6.JPG
-    alttext: Natural Paint Brush Effect
-  - filename: 7.JPG
-    alttext: Novel Pitcher
-  - filename: 8.JPG
-    alttext: Golden Rays
-  - filename: 9.JPG
-    alttext: Up To Infinity 
+---
+- title: Green Sapling
+  featimg: "1.jpg"
+  meta: "Green Sapling"
+  date: "2017-02-10"
+  layout: post
+  tags: [gallery]
+  category: [standard]  
+  author: gphotography
+  type: image
+- title: "Creepy Stick"
+  featimg: "2.JPG"
+  meta: "Creepy Stick"
+  date: "2017-02-10"
+  layout: post
+  tags: [gallery]
+  category: [standard]  
+  author: gphotography
+  type: image
+- title: "Green Pattern"
+  featimg: "3.JPG"
+  meta: "Green Pattern"
+  date: "2017-02-10"
+  layout: post
+  tags: [gallery]
+  category: [standard]  
+  author: gphotography
+  type: image
+- title: "Sky Blue"
+  featimg: "4.JPG"
+  meta: "Sky Blue"
+  date: "2017-02-10"
+  layout: post
+  tags: [gallery]
+  category: [standard]  
+  author: gphotography
+  type: image
+- title: "Bright Attitude"
+  featimg: "5.JPG"
+  meta: "Bright Attitude" 
+  date: "2017-02-10"
+  layout: post
+  tags: [gallery]
+  category: [standard]  
+  author: gphotography
+  type: image
+- title: "Natural Paint Brush Effect"
+  featimg: "6.JPG"
+  meta: "Natural Paint Brush Effect"
+  date: "2015-04-10"
+  layout: post
+  tags: [gallery]
+  category: [standard]  
+  author: gphotography
+  type: image
+- title: "Novel Pitcher"
+  featimg: "7.JPG"
+  meta: "Novel Pitcher"
+  date: "2017-02-10"
+  layout: post
+  tags: [photogallery]
+  category: [standard]  
+  author: gphotography
+  type: image
+- title: "Golden Rays"
+  featimg: "8.JPG"
+  meta: "Golden Rays"
+  date: "2017-02-10"
+  layout: post
+  tags: [photogallery]
+  category: [standard]  
+  author: gphotography
+  type: image
+- title: "Up To Infinity"
+  featimg: "9.JPG"
+  meta: "Up To Infinity" 
+  date: "2016-07-10"
+  layout: post
+  tags: [photogallery]
+  category: [photography]  
+  author: gphotography
+  type: image

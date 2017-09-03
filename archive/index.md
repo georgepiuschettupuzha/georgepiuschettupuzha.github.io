@@ -2,10 +2,10 @@
 layout: page
 title: Archive
 ---
-## by Month
+## By Month
 {% include monthly_archive.html %}
 
 <br/>
 
-## by Year
+## By Year
 {% include yearly_archive.html %}

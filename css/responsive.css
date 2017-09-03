@@ -1,37 +1,16 @@
-@media screen and (max-width: 4000px) and (min-width: 600px) {
-    
-    .head .row .logo {
-        padding: 0;
-        top: 0;
-        left: 0;
-        position: relative;
-        transform: none;
-    }
-
-    .head .row {
-        padding: 0.5rem;
-    }
-
-    header nav ul li {
-        font-size: 1rem;
-    }    
-
-    .margin {
-        padding: 1rem;
-    }
-
-    .iconnav ul {
-        display: inline;
-    }   
+body {
+    background-image: none; 
 }
 
-@media screen and (max-width: 1500px) and (min-width: 256px) {
-    html {
-        padding: 1rem;        
-    }
+.articles, .content_container {
+    width: 100%;
 }
 
-@media screen and (max-width: 500px) and (min-width: 100px) {
+.center {
+    text-align: center;
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
     html {
         font-size: 2rem;
         line-height: 2rem;
@@ -69,5 +48,56 @@
     .nav-col {
         max-width: 100%;
         padding: 0;
+    }
+
+    .circle {
+        border-radius: 100%;
+        max-width: 33%;    
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 2000px) {
+    
+    .head .row .logo {
+        padding: 0;
+        top: 0;
+        left: 0;
+        position: relative;
+        transform: none;
+    }
+
+    .head .row {
+        padding: 0.5rem;
+    }
+
+    header nav ul li {
+        font-size: 1rem;
+    }    
+
+    .margin {
+        padding: 1rem;
+    }
+
+    .iconnav ul {
+        display: inline;
+    }   
+
+    .circle {
+        border-radius: 100%;
+        max-width: 33%;    
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 4000px) {
+
+    .circle {
+        border-radius: 100%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 256px) and (max-width: 4000px) {
+    html {
+        padding: 1rem;        
     }
 }

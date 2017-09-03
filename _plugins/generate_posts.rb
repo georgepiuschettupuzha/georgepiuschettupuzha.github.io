@@ -69,6 +69,8 @@ module Jekyll
       @dir   = posts_dir
       @name  = name
 
+      # print "Message: \n", template_path, name, base, posts_dir, post, "\n"
+
       self.process(name)
 
       if File.exist?(template_path)

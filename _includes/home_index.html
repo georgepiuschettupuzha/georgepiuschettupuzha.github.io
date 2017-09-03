@@ -1,0 +1,51 @@
+<article>
+    {% if include.entry.homedisplay == "iframe" %}
+        {% if include.entry.type == "vimeo" %}
+            {% if include.entry.vimeo-embed %}
+                <div class="video_container">
+                    {{ include.entry.vimeo-embed }}
+                </div>
+            {% endif %}
+        {% elsif include.entry.type == "youtube" %}
+            {% if include.entry.yt-video-id %}
+                <div class="video_container">
+                    <iframe src="https://www.youtube.com/embed/{{ include.entry.yt-video-id }}?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                </div>
+            {% endif %}
+        {% elsif include.entry.type == "audio" %}
+            {% if include.entry.audio-embed %}
+                {{ include.entry.audio-embed }}
+            {% endif %}
+        {% else %}
+            {% if include.entry.featimg %}
+                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
+                    <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ include.entry.featimg }}" alt="{{ include.entry.featimg }}">
+                </a>
+            {% endif %}
+        {% endif %}
+    {% else %}
+        {% if include.entry.type == "youtube" %}
+            {% if include.entry.yt-video-id %}
+                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
+                    <img src="http://img.youtube.com/vi/{{ include.entry.yt-video-id }}/0.jpg" alt="{{ include.entry.title }} thumbnail">
+                </a>
+            {% endif %}
+        {% else %}
+            {% if include.entry.featimg %}
+                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
+                    <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ include.entry.featimg }}" alt="{{ include.entry.featimg }}">
+                </a>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+    {% if include.entry.category %}
+        <span class="category">
+            {{ include.entry.category }}
+        </span>
+    {% endif %}
+    <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}">
+        <h1>{{ include.entry.title }}</h1>
+    </a>
+    <p class="post_content">{{ include.entry.meta | strip_html | truncatewords: 15 }}</p>
+    <span class="date"><i class="fa fa-calendar"></i> {{ include.entry.date | date: '%B %d, %Y' }}</span>
+</article>
