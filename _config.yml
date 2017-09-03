@@ -12,6 +12,7 @@ posts_dir: /postsDir
 author_dir: /author
 author_title_prefix: 'Posted by '
 media_folder: /img
+imagefolder: /img
 author_default_avatar: /profile-pic.jpg
 tumblr: "#"
 pinterest: "#"
@@ -120,3 +121,12 @@ prose:
           help: "Set post type to youtube in order for this to work. Do not set featured image, as the youtube video thumbnail will be used"
           type: "text"
 
+page_gen:
+  - data: "galleries.yml"
+    template: "index_alt"
+    name: "title"
+    dir: ""
+    extension: "html"
+    filter: "featimg"
+
+page_gen-dirs: false

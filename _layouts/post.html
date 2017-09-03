@@ -39,13 +39,14 @@
                     {% if page.type == "standard" %} {% if page.featimg %}
                     <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">                    {% endif %} {% endif %}
                     <div class="post_content">
-                        {{ content }}
+                        {{ page.meta }}
                     </div>
                     {% if page.category || page.tags %}
                     <div class="catsandtags">
                         {% if page.category %}
                         <p class="category">
-                            <span class="name">Categories:</span> {{ page.categories | category_links }}
+                            <span class="name">Categories:</span>
+                                <a href="{{ site.category_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ page.category | category_links }}">{{ page.category | category_links }}</a>
                         </p>
                         {% endif %} {% if page.tags %}
                         <p class="tags">
@@ -62,7 +63,7 @@
                     <a class="next" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"><span class="short">next </span><span class="long">post </span><i class="fa fa-angle-right"></i></a>                    {% endif %}
                 </div>
             </div>
-            {% include sidebar.html %}
+            <!-- {% include sidebar.html %} -->
         </div>
     </section>
     {% include footer.html %}
@@ -75,7 +76,7 @@
             "headline":"{{ page.title }}",
             "genre":"{{ page.category }}",
             "keywords": "{{page.keywords}}", 
-            "url": "{{site.domainUrl}}",
+            "url": "{{site.url}}",
             "inLanguage": "en",
             "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
             "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
@@ -90,33 +91,33 @@
                 ]
             },
             {% endif %}
-        "publisher":{  
-            "@type":"Organization",
-            "name":"George Pius Chettupuzha",
-            "sameAs":[                
-                "https://www.facebook.com/george.pius.338",
-                "https://www.instagram.com/george_pius_chettupuzha/",
-                "https://plus.google.com/113602369345518062791",
-                "https://twitter.com/Mg17George"
-            ],
-            "logo": {
-                "@type": "ImageObject",
-                "contentUrl": "{{site.domainUrl}}/img/Portrait.jpg",
-                "url": "{{site.domainUrl}}"
-            }
-        },
-        "image":{  
-            "@type":"ImageObject",
-            "contentUrl":"{{site.domainUrl}}/img/Portrait.jpg",
-            "url":"{{site.domainUrl}}",
-            "height":"1218",
-            "width":"1218"
-        },
-        "mainEntityOfPage":{  
-            "@type":"WebPage",
-            "@id":"{{site.domainUrl}}{{ page.url }}"
-        },
-        "articleBody":"{{ page.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+            "publisher":{  
+                "@type":"Organization",
+                "name":"George Pius Chettupuzha",
+                "sameAs":[                
+                    "https://www.facebook.com/george.pius.338",
+                    "https://www.instagram.com/george_pius_chettupuzha/",
+                    "https://plus.google.com/113602369345518062791",
+                    "https://twitter.com/Mg17George"
+                ],
+                "logo": {
+                    "@type": "ImageObject",
+                    "contentUrl": "{{site.url}}/img/Portrait.jpg",
+                    "url": "{{site.url}}"
+                }
+            },
+            "image":{  
+                "@type":"ImageObject",
+                "contentUrl":"{{site.url}}/img/Portrait.jpg",
+                "url":"{{site.url}}",
+                "height":"1218",
+                "width":"1218"
+            },
+            "mainEntityOfPage":{  
+                "@type":"WebPage",
+                "@id":"{{site.url}}{{ page.url }}"
+            },
+            "articleBody":"{{ page.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
         }
     </script>
 </body>

@@ -16,7 +16,7 @@ keywords: Blog, views, thoughts, opinions, beliefs, practice, Technology, Person
     "headline":"{{ page.title }}",
     "genre":"{{ page.category }}",
     "keywords": "{{page.keywords}}", 
-    "url": "{{site.domainUrl}}",
+    "url": "{{site.url}}",
     "inLanguage": "en",
     "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
     {% if page.author contains "George Pius Chettupuzha" %}
@@ -41,19 +41,19 @@ keywords: Blog, views, thoughts, opinions, beliefs, practice, Technology, Person
       ],
       "logo": {
         "@type": "ImageObject",
-        "contentUrl": "{{site.domainUrl}}/img/profile-pic.jpg",
-        "url": "{{site.domainUrl}}"
+        "contentUrl": "{{site.url}}/img/profile-pic.jpg",
+        "url": "{{site.url}}"
     }
    },
    "image":{  
       "@type":"ImageObject",
-      "contentUrl":"{{site.domainUrl}}/img/profile-pic.jpg",
-      "url":"{{site.domainUrl}}",
+      "contentUrl":"{{site.url}}/img/profile-pic.jpg",
+      "url":"{{site.url}}",
       "height":"1218",
       "width":"1218"
    },
    "mainEntityOfPage":{  
       "@type":"WebPage",
-      "@id":"{{site.domainUrl}}{{ page.url }}"
+      "@id":"{{site.url}}{{ page.url }}"
    }
  }

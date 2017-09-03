@@ -13,12 +13,17 @@
         {% include search.html %}
         <section class="margin">
             <div class="content">
-                <p class="switch">Layout: <span id="grid">Grid</span> &bull; <span id="classic">Classic</span></p>
+                <!-- <p class="switch">Layout: <span id="grid">Grid</span> &bull; <span id="classic">Classic</span></p> -->
                 {% if page.title %}<h1 class="title">{{ page.title }}</h1>{% endif %}
                 <div class="articles">
-                    {{ content }}
-                </div>
-                {% include sidebar.html %}
+                    <!-- {{ content }} -->
+                    {% if page.title contains "Home" %}
+                        {% for post in site.data.galleries %}
+                            {% include home_index.html entry=post %}
+                        {% endfor %}
+                    {% endif %}
+                </div>                
+                <!-- {% include sidebar.html %} -->
             </div>
         </section>
         {% include footer.html %}
@@ -32,16 +37,16 @@
             "headline":"{{ page.title }}",
             "genre":"{{ page.category }}",
             "keywords": "{{page.keywords}}", 
-            "url": "{{site.domainUrl}}",
+            "url": "{{site.url}}",
             "inLanguage": "en",
             "isFamilyFriendly": "True",
             "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
-            "url": "{{site.domainUrl}}",
+            "url": "{{site.url}}",
             "keywords": "{{page.keywords}}",
             {% include schema/author.html %}
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "{{site.domainUrl}}"
+                "@id": "{{site.url}}"
             }
         }
         </script>
