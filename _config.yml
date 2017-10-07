@@ -4,7 +4,7 @@ url: gphotography.github.io
 gems: [jekyll-paginate]
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
-paginate: 8
+paginate: 3
 paginate_path: /page/:num/
 tag_dir: /tag
 category_dir: /category
