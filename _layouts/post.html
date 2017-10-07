@@ -15,6 +15,18 @@
         <div class="content">
             <div class="content_container">
                 <article>
+                    <h1 class="post_title">
+                        {{ page.title }}
+                    </h1>
+                    <div class="meta">
+                        {% include author.html%} &bull;
+                        <span class="date">
+                                Published on {{ page.date | date: '%B %d, %Y' }}
+                            </span>
+                    </div>
+                    <div class="post_content padding">
+                        {{ page.meta }}
+                    </div>
                     {% if page.type == "vimeo" %} {% if page.vimeo-embed %}
                     <div class="video_container">
                         {{ page.vimeo-embed }}
@@ -25,22 +37,12 @@
                     </div>
                     {% endif %} {% elsif page.type == "image" or page.type == "gallery" %} {% if page.featimg %}
                     <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">                    {% endif %} {% elsif page.type == "audio" %} {% if page.audio-embed %} {{ page.audio-embed }} {% endif
-                    %} {% endif %}
-
-                    <h1 class="post_title">
-                        {{ page.title }}
-                    </h1>
-                    <div class="meta">
-                        {% include author.html%} &bull;
-                        <span class="date">
-                                Published on {{ page.date | date: '%B %d, %Y' }}
-                            </span>
-                    </div>
-                    {% if page.type == "standard" %} {% if page.featimg %}
-                    <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">                    {% endif %} {% endif %}
-                    <div class="post_content">
-                        {{ page.meta }}
-                    </div>
+                    %} {% endif %}                    
+                    {% if page.type == "standard" %} 
+                        {% if page.featimg %}
+                        <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
+                        {% endif %}
+                    {% endif %}                    
                     {% if page.category || page.tags %}
                     <div class="catsandtags">
                         {% if page.category %}

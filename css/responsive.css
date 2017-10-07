@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+.padding {
+    padding: 1rem 0 1rem 0;
+}
+
 @media screen and (min-width: 100px) and (max-width: 500px) {
     html {
         font-size: 2rem;

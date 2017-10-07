@@ -56,7 +56,7 @@ module Jekyll
       
       # -------------------------
       # Example:
-      # author: gphotography
+      # author: George Pius Chettupuzha
       # title: Bright Attitude 
       # featimg: 5.JPG
       # tags: [text]

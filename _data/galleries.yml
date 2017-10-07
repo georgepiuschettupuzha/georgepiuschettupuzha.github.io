@@ -1,112 +1,4 @@
 ---
-- title: Green Sapling
-  featimg: "1.jpg"
-  meta: "Green Sapling"
-  date: "2017-02-10"
-  layout: post
-  tags: [gallery]
-  category: [standard]  
-  author: gphotography
-  type: image
-- title: "Creepy Stick"
-  featimg: "2.jpg"
-  meta: "Creepy Stick"
-  date: "2017-02-10"
-  layout: post
-  tags: [gallery]
-  category: [standard]  
-  author: gphotography
-  type: image
-- title: "Green Pattern"
-  featimg: "3.jpg"
-  meta: "Green Pattern"
-  date: "2017-02-10"
-  layout: post
-  tags: [gallery]
-  category: [standard]  
-  author: gphotography
-  type: image
-- title: "Sky Blue"
-  featimg: "4.jpg"
-  meta: "Sky Blue"
-  date: "2017-02-10"
-  layout: post
-  tags: [gallery]
-  category: [standard]  
-  author: gphotography
-  type: image
-- title: "Bright Attitude"
-  featimg: "5.jpg"
-  meta: "Bright Attitude" 
-  date: "2017-02-10"
-  layout: post
-  tags: [gallery]
-  category: [standard]  
-  author: gphotography
-  type: image
-- title: "Natural Paint Brush Effect"
-  featimg: "6.jpg"
-  meta: "Natural Paint Brush Effect"
-  date: "2015-04-10"
-  layout: post
-  tags: [gallery]
-  category: [standard]  
-  author: gphotography
-  type: image
-- title: "Novel Pitcher"
-  featimg: "7.jpg"
-  meta: "Novel Pitcher"
-  date: "2017-02-10"
-  layout: post
-  tags: [photogallery]
-  category: [standard]  
-  author: gphotography
-  type: image
-- title: "Golden Rays"
-  featimg: "8.jpg"
-  meta: "Golden Rays"
-  date: "2017-02-10"
-  layout: post
-  tags: [photogallery]
-  category: [standard]  
-  author: gphotography
-  type: image
-- title: "Up To Infinity"
-  featimg: "9.jpg"
-  meta: "Up To Infinity" 
-  date: "2016-07-10"
-  layout: post
-  tags: [photogallery]
-  category: [photography]  
-  author: gphotography
-  type: image
-- title: "Skull Tracework"
-  featimg: "skull.jpg"
-  meta: "Skull Tracework using Adobe Photoshop and Adobe Illustrator" 
-  date: "2016-10-01"
-  layout: post
-  tags: [Adobe Photoshop, Adobe Illustrator]
-  category: [Digital Artwork]  
-  author: gphotography
-  type: image
-- title: "The Evil Crow"
-  featimg: "The Evil Crow-01-01.jpg"
-  meta: "The Evil Crow using Adobe Photoshop and Adobe Illustrator" 
-  date: "2016-10-01"
-  layout: post
-  tags: [Adobe Photoshop, Adobe Illustrator]
-  category: [Digital Artwork]  
-  author: gphotography
-  type: image
-- title: "The Night Arrow"
-  featimg: "tracing work 01-01.jpg"
-  meta: "The Night Arrow using Adobe Photoshop and Adobe Illustrator" 
-  date: "2016-10-01"
-  layout: post
-  tags: [Adobe Photoshop, Adobe Illustrator]
-  category: [Digital Artwork]  
-  author: gphotography
-  type: image
 - title: "Misty Couple"
   featimg: "my mind set.jpg"
   meta: "Misty Couple using Adobe Photoshop" 
@@ -114,7 +6,7 @@
   layout: post
   tags: [Adobe Photoshop]
   category: [Digital Artwork]  
-  author: gphotography
+  author: George Pius Chettupuzha
   type: image
 - title: "Car Illustration"
   featimg: "car-01.jpg"
@@ -123,5 +15,32 @@
   layout: post
   tags: [Adobe Illustrator]
   category: [Digital Artwork]  
-  author: gphotography
+  author: George Pius Chettupuzha
+  type: image
+- title: "The Night Arrow"
+  featimg: "tracing work 01-01.jpg"
+  meta: "The Night Arrow using Adobe Photoshop and Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Adobe Photoshop, Adobe Illustrator]
+  category: [Digital Artwork]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Skull Tracework"
+  featimg: "skull.jpg"
+  meta: "Skull Tracework using Adobe Photoshop and Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Adobe Photoshop, Adobe Illustrator]
+  category: [Digital Artwork]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "The Evil Crow"
+  featimg: "The Evil Crow-01-01.jpg"
+  meta: "The Evil Crow using Adobe Photoshop and Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Adobe Photoshop, Adobe Illustrator]
+  category: [Digital Artwork]  
+  author: George Pius Chettupuzha
   type: image
