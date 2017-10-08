@@ -36,11 +36,11 @@
                         <iframe src="https://www.youtube.com/embed/{{page.yt-video-id}}?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
                     </div>
                     {% endif %} {% elsif page.type == "image" or page.type == "gallery" %} {% if page.featimg %}
-                    <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">                    {% endif %} {% elsif page.type == "audio" %} {% if page.audio-embed %} {{ page.audio-embed }} {% endif
+                    <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/img/{{ page.featimg }}" alt="{{ page.featimg }}">                    {% endif %} {% elsif page.type == "audio" %} {% if page.audio-embed %} {{ page.audio-embed }} {% endif
                     %} {% endif %}                    
                     {% if page.type == "standard" %} 
                         {% if page.featimg %}
-                        <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
+                        <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/img/{{ page.featimg }}" alt="{{ page.featimg }}">
                         {% endif %}
                     {% endif %}                    
                     {% if page.category || page.tags %}
