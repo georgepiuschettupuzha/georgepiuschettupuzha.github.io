@@ -38,14 +38,14 @@
             {% endif %}
         {% endif %}
     {% endif %}
-    {% if include.entry.category %}
+    <!-- {% if include.entry.category %}
         <span class="category">
             {{ include.entry.category }}
         </span>
     {% endif %}
     <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}">
         <h1>{{ include.entry.title }}</h1>
-    </a>
-    <p class="post_content">{{ include.entry.meta | strip_html | truncatewords: 15 }}</p>
-    <span class="date"><i class="fa fa-calendar"></i> {{ include.entry.date | date: '%B %d, %Y' }}</span>
+    </a> -->
+    <!-- <p class="post_content">{{ include.entry.meta | strip_html | truncatewords: 15 }}</p>
+    <span class="date"><i class="fa fa-calendar"></i> {{ include.entry.date | date: '%B %d, %Y' }}</span> -->
 </article>

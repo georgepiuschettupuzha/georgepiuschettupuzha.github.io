@@ -14,10 +14,18 @@
         <section class="margin">
             <div class="content">
                 <!-- <p class="switch">Layout: <span id="grid">Grid</span> &bull; <span id="classic">Classic</span></p> -->
-                {% if page.title %}<h1 class="title">{{ page.title }}</h1>{% endif %}
+                <!-- {% if page.title %}<h1 class="title">{{ page.title }}</h1>{% endif %} -->
                 <div class="articles">
                     <!-- {{ content }} -->
                     {% if page.title contains "Home" %}
+                        <div class="content_container padding">
+                            <p class="left">
+                                <h1>Hey</h1>
+                                <h1>I am George Pius Chettupuzha,</h1>
+                                <h1>a graphic designer, from Chennai, India.</h1>
+                                <a href="/portfolio/"><button class="button"><b>My Work portfolio</b></button></a>
+                            </p>
+                        </div>
                         {% for post in site.data.galleries %}
                             {% include home_index.html entry=post %}
                         {% endfor %}

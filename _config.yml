@@ -1,10 +1,10 @@
-name: UniqKoncept
+name: George Pius Chettupuzha
 description: George Pius Chettupuzha
-url: uniqkoncept.github.io
+url: georgepiuschettupuzha.github.io
 gems: [jekyll-paginate]
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
-paginate: 3
+paginate: 8
 paginate_path: /page/:num/
 tag_dir: /tag
 category_dir: /category

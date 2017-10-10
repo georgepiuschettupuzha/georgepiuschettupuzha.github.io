@@ -1,10 +1,55 @@
 ---
+- title: "Canon Poster 1"
+  featimg: "canon-poster-1.jpg"
+  meta: "Canon poster using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Canon, Poster Design, Adobe Photoshop]
+  category: [Poster Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Canon Lens Poster 1"
+  featimg: "canon-lens-poster-1.jpg"
+  meta: "Canon lens lineup poster using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Canon, Poster Design, Adobe Photoshop]
+  category: [Poster Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Trip Couple Cover Page 1"
+  featimg: "trip-couple-magazine-cover.jpg"
+  meta: "Trip Couple Cover Page using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Magazine Covers, Adobe Photoshop]
+  category: [Magazine Covers]  
+  author: George Pius Chettupuzha
+  type: image
 - title: "Misty Couple"
   featimg: "my mind set.jpg"
   meta: "Misty Couple using Adobe Photoshop" 
   date: "2016-10-01"
   layout: post
   tags: [Adobe Photoshop]
+  category: [Digital Artwork]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "The Night Arrow"
+  featimg: "tracing work 01-01.jpg"
+  meta: "The Night Arrow using Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Adobe Illustrator]
+  category: [Digital Artwork]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Skull Tracework"
+  featimg: "skull.jpg"
+  meta: "Skull Tracework using Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Adobe Illustrator]
   category: [Digital Artwork]  
   author: George Pius Chettupuzha
   type: image
@@ -17,30 +62,120 @@
   category: [Digital Artwork]  
   author: George Pius Chettupuzha
   type: image
-- title: "The Night Arrow"
-  featimg: "tracing work 01-01.jpg"
-  meta: "The Night Arrow using Adobe Photoshop and Adobe Illustrator" 
-  date: "2016-10-01"
-  layout: post
-  tags: [Adobe Photoshop, Adobe Illustrator]
-  category: [Digital Artwork]  
-  author: George Pius Chettupuzha
-  type: image
-- title: "Skull Tracework"
-  featimg: "skull.jpg"
-  meta: "Skull Tracework using Adobe Photoshop and Adobe Illustrator" 
-  date: "2016-10-01"
-  layout: post
-  tags: [Adobe Photoshop, Adobe Illustrator]
-  category: [Digital Artwork]  
-  author: George Pius Chettupuzha
-  type: image
 - title: "The Evil Crow"
   featimg: "The Evil Crow-01-01.jpg"
-  meta: "The Evil Crow using Adobe Photoshop and Adobe Illustrator" 
+  meta: "The Evil Crow using Adobe Illustrator" 
   date: "2016-10-01"
   layout: post
-  tags: [Adobe Photoshop, Adobe Illustrator]
+  tags: [Adobe Illustrator]
+  category: [Digital Artwork]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Mini Poster 2"
+  featimg: "mini-poster-2.jpg"
+  meta: "Mini Poster using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Mini, Poster Design, Adobe Photoshop]
+  category: [Poster Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Mini Poster 1"
+  featimg: "mini-poster-1.jpg"
+  meta: "Mini Poster using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Mini, Poster Design, Adobe Photoshop]
+  category: [Poster Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Mini Poster 3"
+  featimg: "mini-poster-3.jpg"
+  meta: "Mini Poster 3 using Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Mini, Poster Design, Adobe Illustrator]
+  category: [Poster Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Mini Halloween Poster 1"
+  featimg: "mini-halloween-1.jpg"
+  meta: "Mini Halloween Poster 1 using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Mini, Adobe Photoshop]
+  category: [Poster Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Mini Brochure Design 1"
+  featimg: "mini-brochure-outside.jpg"
+  meta: "Mini Brochure Design using Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Mini, Brochure Design, Adobe Illustrator]
+  category: [Brochure Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Mini Brochure Design 2"
+  featimg: "mini-brochure-inside.jpg"
+  meta: "Mini Brochure Design using Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Mini, Brochure Design, Adobe Illustrator]
+  category: [Brochure Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Mini Logo Design"
+  featimg: "mini-logo-design.png"
+  meta: "Mini Logo Design using Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Mini, Logo Design, Adobe Illustrator]
+  category: [Logo Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Body Spray Branding"
+  featimg: "body-spray-branding.jpg"
+  meta: "Body Spray Branding using Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Product Design, Adobe Illustrator]
+  category: [Product Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Vivo Poster 1"
+  featimg: "vivo-poster-1.jpg"
+  meta: "Vivo poster using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Vivo, Poster Design, Adobe Photoshop]
+  category: [Poster Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Audi A4 Poster 1"
+  featimg: "audi-poster-1.jpg"
+  meta: "Audi A4 poster using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Audi, Poster Design, Adobe Photoshop]
+  category: [Poster Design]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Minion"
+  featimg: "minion.jpg"
+  meta: "Minion using Adobe Photoshop" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Digital Reproduction, Adobe Photoshop]
+  category: [Digital Artwork]  
+  author: George Pius Chettupuzha
+  type: image
+- title: "Apple"
+  featimg: "apple-01.png"
+  meta: "An apple using Adobe Illustrator" 
+  date: "2016-10-01"
+  layout: post
+  tags: [Digital Reproduction, Adobe Illustrator]
   category: [Digital Artwork]  
   author: George Pius Chettupuzha
   type: image
