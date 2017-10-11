@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+
+    <body class="index">
+        {% include svg.html %}
+       <header class="head">
+           {% include header.html %}
+           {% include nav.html %}
+        </header>
+        {% include search.html %}
+        <section class="margin">
+            <div class="content">
+                <!-- <p class="switch">Layout: <span id="grid">Grid</span> &bull; <span id="classic">Classic</span></p> -->
+                <!-- {% if page.title %}<h1 class="title">{{ page.title }}</h1>{% endif %} -->
+                <div class="articles">
+                    <!-- {{ content }} -->
+                    {% if page.title contains "Home" %}
+                        <div class="content_container padding">
+                            <p class="left">
+                                <h1>Hello</h1>
+                                <h2>I am George Pius Chettupuzha,</h2>
+                                <h2>a graphic designer, from Chennai, India.</h2>
+                                <a href="/portfolio/"><button class="button"><b>My Work portfolio</b></button></a>
+                            </p>
+                        </div>
+                        {% for post in site.data.galleries %}
+                            {% include home_index.html entry=post %}
+                        {% endfor %}
+
+                        <!-- {% for category in site.categories %}
+                            {% include home_index.html entry=category %}
+                            {{ category }}
+                        {% endfor %} -->
+
+                    {% endif %}
+                    {{ content }}
+                </div>                
+                <!-- {% include sidebar.html %} -->
+            </div>
+        </section>
+        {% include footer.html %}
+        <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
+        <!-- Home Page -->
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "George Pius Chettupuzha",
+            "headline":"{{ page.title }}",
+            "genre":"{{ page.category }}",
+            "keywords": "{{page.keywords}}", 
+            "url": "{{site.url}}",
+            "inLanguage": "en",
+            "isFamilyFriendly": "True",
+            "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
+            "url": "{{site.url}}",
+            "keywords": "{{page.keywords}}",
+            {% include schema/author.html %}
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{{site.url}}"
+            }
+        }
+        </script>
+    </body>
+</html>
