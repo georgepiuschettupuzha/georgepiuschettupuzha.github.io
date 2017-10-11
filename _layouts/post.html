@@ -43,7 +43,7 @@
                         <img class="featimg" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ page.featimg }}" alt="{{ page.featimg }}">
                         {% endif %}
                     {% endif %}                    
-                    {% if page.category || page.tags %}
+                    {% if page.category or page.tags %}
                     <div class="catsandtags">
                         {% if page.category %}
                         <p class="category">

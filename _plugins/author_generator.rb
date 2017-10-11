@@ -71,7 +71,8 @@ module Jekyll
     def write_author_indexes
       if self.layouts.key? 'author_index'
         dir = self.config['author_dir'] || 'authors'
-        self.posts.each do |post|
+        posts = self.posts
+        posts.docs.each do |post|
           post_authors = post.data["author"]
           if String.try_convert(post_authors)
                post_authors = [ post_authors ]

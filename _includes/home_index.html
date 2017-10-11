@@ -1,4 +1,4 @@
-<article>
+<article>    
     {% if include.entry.homedisplay == "iframe" %}
         {% if include.entry.type == "vimeo" %}
             {% if include.entry.vimeo-embed %}
@@ -18,7 +18,7 @@
             {% endif %}
         {% else %}
             {% if include.entry.featimg %}
-                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
+                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: '/posts/' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
                     <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ include.entry.featimg }}" alt="{{ include.entry.featimg }}">
                 </a>
             {% endif %}
@@ -32,7 +32,7 @@
             {% endif %}
         {% else %}
             {% if include.entry.featimg %}
-                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
+                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: '/posts/' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
                     <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ include.entry.featimg }}" alt="{{ include.entry.featimg }}">
                 </a>
             {% endif %}
@@ -42,8 +42,8 @@
         <span class="category">
             {{ include.entry.category }}
         </span>
-    {% endif %}
-    <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}">
+    {% endif %} -->
+    <!-- <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}">
         <h1>{{ include.entry.title }}</h1>
     </a> -->
     <!-- <p class="post_content">{{ include.entry.meta | strip_html | truncatewords: 15 }}</p>

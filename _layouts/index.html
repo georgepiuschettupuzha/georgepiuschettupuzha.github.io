@@ -29,6 +29,12 @@
                         {% for post in site.data.galleries %}
                             {% include home_index.html entry=post %}
                         {% endfor %}
+
+                        <!-- {% for category in site.categories %}
+                            {% include home_index.html entry=category %}
+                            {{ category }}
+                        {% endfor %} -->
+
                     {% endif %}
                 </div>                
                 <!-- {% include sidebar.html %} -->
