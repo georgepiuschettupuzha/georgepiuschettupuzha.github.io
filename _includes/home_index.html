@@ -18,7 +18,7 @@
             {% endif %}
         {% else %}
             {% if include.entry.featimg %}
-                <a href="{{ include.entry.featimg | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
+                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
                     <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ include.entry.featimg }}" alt="{{ include.entry.featimg }}">
                 </a>
             {% endif %}
@@ -32,7 +32,7 @@
             {% endif %}
         {% else %}
             {% if include.entry.featimg %}
-                <a href="{{ include.entry.featimg | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
+                <a href="{{ include.entry.title | downcase | replace: ' ', '-' | prepend: site.baseurl | replace: '//', '/'}}" class="noline">
                     <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}/{{ include.entry.featimg }}" alt="{{ include.entry.featimg }}">
                 </a>
             {% endif %}
